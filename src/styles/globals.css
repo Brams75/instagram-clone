@@ -26,6 +26,10 @@ a {
   text-align: center;
 }
 
+.account {
+  margin-right: 0.5rem;
+}
+
 .signup {
   font-size: 1rem;
 }

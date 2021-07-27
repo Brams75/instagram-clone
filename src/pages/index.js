@@ -10,7 +10,7 @@ export default function Home() {
       <h1 className="home__title">Instagram</h1>
       <LoginForm />
       <p>
-        Vous n&apos;avez pas de compte ?
+        <span className="account">Vous n&apos;avez pas de compte ?</span>
         <Link href="/#" passHref>
           <a href="replace" className="signup">
             Inscrivez-vous

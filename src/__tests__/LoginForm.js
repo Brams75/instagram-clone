@@ -20,13 +20,15 @@ Object.defineProperty(window, "matchMedia", {
 const setup = () => render(<LoginForm />);
 
 describe("Render LoginForm", () => {
-  test("has an input username", () => {
+  test("has an input email", () => {
     setup();
-    expect(screen.getByRole("textbox", { name: /username/i })).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText(/Num. téléphone, nom d’utilisateur ou e-mail/i)
+    ).toBeInTheDocument();
   });
-  test("can write in username input ", () => {
+  test("can write in email input ", () => {
     setup();
-    const input = screen.getByRole("textbox", { name: /username/i });
+    const input = screen.getByPlaceholderText(/Num. téléphone, nom d’utilisateur ou e-mail/i);
     expect(input).toBeInTheDocument();
     expect(input).toHaveValue("");
 
@@ -39,7 +41,7 @@ describe("Render LoginForm", () => {
 
   test("can write in password input ", () => {
     setup();
-    const input = screen.getByLabelText(/password/i);
+    const input = screen.getByPlaceholderText(/Mot de passe/i);
     expect(input).toBeInTheDocument();
     expect(input).toHaveValue("");
 

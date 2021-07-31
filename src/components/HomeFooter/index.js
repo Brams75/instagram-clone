@@ -31,17 +31,17 @@ const HomeFooter = () => {
   }
   return (
     <Container>
-      <ul>
+      <ul className="flex justify-evenly flex-wrap">
         {links.map((link) => (
-          <li key={link}>
+          <li key={link} className="m-1">
             <Link href="/#" passHref>
               <a href="replace">{link}</a>
             </Link>
           </li>
         ))}
       </ul>
-      <div className="footer-bottom">
-        <Select className="select" defaultValue="fr" onChange={handleChange}>
+      <div className="flex justify-evenly m-4">
+        <Select className="w-24 m-2" defaultValue="fr" onChange={handleChange}>
           {selects.map((select) => (
             <Option key={select.value} value={select.value}>
               {select.text}

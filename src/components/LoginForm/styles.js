@@ -6,14 +6,6 @@ const Container = styled.div`
   justify-content: center;
   width: 75vw;
   margin: 0 auto;
-
-  .submit-button {
-    min-width: 100%;
-  }
-
-  .forget-password {
-    text-align: center;
-  }
 `;
 export const Ou = styled.div`
   text-transform: uppercase;
@@ -37,6 +29,10 @@ export const Facebook = styled.button`
   cursor: pointer;
   overflow: hidden;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   span {
     margin-left: 0.5rem;
     color: #385185;

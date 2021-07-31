@@ -1,24 +1,16 @@
 import React from "react";
-import Link from "next/link";
+import Head from "next/head";
+import HomeLayout from "../components/HomeLayout";
 import LoginForm from "../components/LoginForm";
-import HomeFooter from "../components/HomeFooter";
-import DownloadApp from "../components/DownloadApp";
 
 export default function Home() {
   return (
-    <div className="home">
-      <h1 className="home__title">Instagram</h1>
+    <HomeLayout text="Inscrivez-vous" href="/signup">
+      <Head>
+        <title>Instagram</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <LoginForm />
-      <p>
-        <span className="account">Vous n&apos;avez pas de compte ?</span>
-        <Link href="/#" passHref>
-          <a href="replace" className="signup">
-            Inscrivez-vous
-          </a>
-        </Link>
-      </p>
-      <DownloadApp />
-      <HomeFooter />
-    </div>
+    </HomeLayout>
   );
 }

@@ -6,13 +6,13 @@ import Container from "./styles";
 const DownloadApp = () => {
   return (
     <Container>
-      <p>Téléchargez l&apos;application.</p>
-      <div className="links">
+      <p className="text-center">Téléchargez l&apos;application.</p>
+      <div className="flex justify-center">
         <Link
           href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"
           passHref
         >
-          <a href="replace" className="first-link">
+          <a href="replace" className="mr-2">
             <Image
               src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_french-fr.png/485fcccb52dc.png"
               alt="Disponible dans l’App Store"

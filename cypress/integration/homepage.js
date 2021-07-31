@@ -4,11 +4,11 @@ describe("Home", () => {
     cy.findByRole("heading", { name: /instagram/i });
 
     cy.log("Filling the form");
-    cy.findByRole("textbox", { name: /username/i })
+    cy.findByPlaceholderText(/Num. téléphone, nom d’utilisateur ou e-mail/i)
       .clear()
-      .type("Chuck");
+      .type("chuck@gmail.com");
 
-    cy.findByLabelText(/password/i)
+    cy.findByPlaceholderText(/Mot de passe/i)
       .clear()
       .type("Chuck");
 

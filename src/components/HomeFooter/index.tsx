@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import { Select } from 'antd';
 import Container from './styles';
@@ -26,7 +25,7 @@ const selects = [
   { value: 'en-gb', text: 'English (UK)' },
 ];
 
-function HomeFooter() {
+export default function HomeFooter() {
   return (
     <Container>
       <ul>
@@ -56,5 +55,3 @@ function HomeFooter() {
     </Container>
   );
 }
-
-export default HomeFooter;

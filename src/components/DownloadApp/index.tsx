@@ -1,9 +1,18 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Container from './styles';
+import styled from 'styled-components';
 
-function DownloadApp() {
+const Container = styled.div`
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+  .first-link {
+    margin-right: 1rem;
+  }
+`;
+
+export default function DownloadApp() {
   return (
     <Container>
       <p>Téléchargez l&apos;application.</p>
@@ -38,5 +47,3 @@ function DownloadApp() {
     </Container>
   );
 }
-
-export default DownloadApp;

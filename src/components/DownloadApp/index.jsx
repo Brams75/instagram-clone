@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Container from "./styles";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Container from './styles';
 
-const DownloadApp = () => {
+function DownloadApp() {
   return (
     <Container>
       <p>Téléchargez l&apos;application.</p>
@@ -37,6 +37,6 @@ const DownloadApp = () => {
       </div>
     </Container>
   );
-};
+}
 
 export default DownloadApp;

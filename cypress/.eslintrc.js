@@ -1,11 +1,11 @@
 module.exports = {
-  plugins: ["cypress"],
+  plugins: ['cypress'],
   rules: {
-    "cypress/no-assigning-return-values": "error",
-    "cypress/no-unnecessary-waiting": "error",
-    "cypress/assertion-before-screenshot": "warn",
-    "cypress/no-force": "warn",
-    "cypress/no-async-tests": "error",
+    'cypress/no-assigning-return-values': 'error',
+    'cypress/no-unnecessary-waiting': 'error',
+    'cypress/assertion-before-screenshot': 'warn',
+    'cypress/no-force': 'warn',
+    'cypress/no-async-tests': 'error',
   },
-  extends: ["plugin:cypress/recommended"],
+  extends: ['plugin:cypress/recommended'],
 };

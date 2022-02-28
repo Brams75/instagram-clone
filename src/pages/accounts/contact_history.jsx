@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const ContactHistory = () => {
+function ContactHistory() {
   return <div>ContactHistory</div>;
-};
+}
 
 export default ContactHistory;

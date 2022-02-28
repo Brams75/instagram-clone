@@ -1,8 +1,8 @@
-import React from "react";
-import "../styles/reset.css";
-import "../styles/globals.css";
-import "antd/dist/antd.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import '../styles/reset.css';
+import '../styles/globals.css';
+import 'antd/dist/antd.css';
+import PropTypes from 'prop-types';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />; // eslint-disable-line

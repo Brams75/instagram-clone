@@ -5,3 +5,4 @@ npx lint-staged
 npx husky add .husky/pre-commit "yarn format"
 git add .husky/pre-commit
 yarn format
+yarn format

@@ -1,17 +1,10 @@
-import React from "react";
-import { Form, Input, Button } from "antd";
-import { FacebookOutlined } from "@ant-design/icons";
-import Link from "next/link";
-import Container, { Ou, Facebook } from "./styles";
+import React from 'react';
+import { Form, Input, Button } from 'antd';
+import { FacebookOutlined } from '@ant-design/icons';
+import Link from 'next/link';
+import Container, { Ou, Facebook } from './styles';
 
-const LoginForm = () => {
-  const onFinish = (values) => {
-    console.log("Success:", values);
-  };
-
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
-  };
+function LoginForm() {
   return (
     <Container>
       <Form
@@ -25,8 +18,6 @@ const LoginForm = () => {
         initialValues={{
           remember: true,
         }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
       >
         <Form.Item
           label="Username"
@@ -48,7 +39,7 @@ const LoginForm = () => {
           rules={[
             {
               required: true,
-              message: "Veuillez saisir votre mot de passe !",
+              message: 'Veuillez saisir votre mot de passe !',
             },
           ]}
         >
@@ -76,6 +67,6 @@ const LoginForm = () => {
       </Link>
     </Container>
   );
-};
+}
 
 export default LoginForm;

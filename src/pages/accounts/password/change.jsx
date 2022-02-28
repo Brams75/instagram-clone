@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const Change = () => {
+function Change() {
   return <div>Change</div>;
-};
+}
 
 export default Change;

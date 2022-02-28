@@ -6,6 +6,7 @@ import Container from "./styles";
 const { Option } = Select;
 
 const links = [
+  "Meta",
   "À propos",
   "Blog",
   "Emplois",
@@ -48,7 +49,7 @@ const HomeFooter = () => {
             </Option>
           ))}
         </Select>
-        <div className="copyright"> &copy; 2021 Instagram par Facebook</div>
+        <div className="copyright"> &copy; {new Date().getFullYear()} Instagram par Meta</div>
       </div>
     </Container>
   );

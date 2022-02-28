@@ -6,7 +6,6 @@ import Home from '../pages/index';
 describe('Home', () => {
   it('true', () => {
     render(<Home />);
-    screen.debug();
     expect(screen.findByText('Home')).toBeInTheDocument();
   });
 });

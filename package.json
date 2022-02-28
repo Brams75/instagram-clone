@@ -17,7 +17,8 @@
     "cypress": "cypress open",
     "cypress:headless": "cypress run --browser chrome --headless",
     "test:e2e": "start-server-and-test 'yarn start' 3000 'yarn cypress'",
-    "test:e2e:ci": "start-server-and-test 'yarn start' 3000 'yarn cypress:headless'"
+    "test:e2e:ci": "start-server-and-test 'yarn start' 3000 'yarn cypress:headless'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
@@ -40,8 +41,10 @@
   "devDependencies": {
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",
+    "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-testing-library": "^4.10.1",
+    "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
     "prettier": "^2.3.2"
   },

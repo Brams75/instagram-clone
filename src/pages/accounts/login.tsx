@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import LoginForm from '@/components/LoginForm';
-import HomeFooter from '@/components/HomeFooter';
-import DownloadApp from '@/components/DownloadApp';
+import LoginForm from '@/src/components/LoginForm';
+import HomeFooter from '@/src/components/HomeFooter';
+import DownloadApp from '@/src/components/DownloadApp';
 
 export default function Login() {
   return (

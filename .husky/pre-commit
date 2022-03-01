@@ -7,3 +7,4 @@ git add .husky/pre-commit
 
 yarn format
 yarn format
+yarn format

@@ -11,6 +11,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 import SearchIcon from '@mui/icons-material/Search';
+import Avatar from '@mui/material/Avatar';
 
 export {
   HomeIcon,
@@ -26,4 +27,5 @@ export {
   AccountCircleIcon,
   CancelIcon,
   SearchIcon,
+  Avatar,
 };

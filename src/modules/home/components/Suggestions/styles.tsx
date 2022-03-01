@@ -12,7 +12,7 @@ const Container = styled.div`
   padding: 30px;
 
   .sub-container {
-    margin: 16px;
+    margin: 16px 0px;
     border: 1px solid;
     display: flex;
     align-items: center;

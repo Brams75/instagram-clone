@@ -1,7 +1,3 @@
-import React from 'react';
-
-function Change() {
+export default function Change() {
   return <div>Change</div>;
 }
-
-export default Change;

@@ -1,7 +1,3 @@
-import React from 'react';
-
-function ContactHistory() {
+export default function ContactHistory() {
   return <div>ContactHistory</div>;
 }
-
-export default ContactHistory;

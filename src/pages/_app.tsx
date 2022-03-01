@@ -1,14 +1,14 @@
-import React from 'react';
-import '../styles/reset.css';
-import '../styles/globals.css';
-import 'antd/dist/antd.css';
-import PropTypes from 'prop-types';
+import type { AppProps } from 'next/app';
+import Header from 'src/modules/common/components/Header';
+import GlobalStyles from 'src/styles/GlobalStyles';
+import 'sanitize.css';
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <GlobalStyles />
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.func.isRequired,
-  pageProps: PropTypes.objectOf(PropTypes.any.isRequired).isRequired,
-};

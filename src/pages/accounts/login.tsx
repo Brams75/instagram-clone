@@ -1,14 +1,11 @@
-import React from 'react';
 import Link from 'next/link';
-import LoginForm from '@/src/components/LoginForm';
-import HomeFooter from '@/src/components/HomeFooter';
-import DownloadApp from '@/src/components/DownloadApp';
+import HomeFooter from 'src/components/HomeFooter';
+import DownloadApp from 'src/components/DownloadApp';
 
 export default function Login() {
   return (
     <div className="home">
       <h1 className="home__title">Instagram</h1>
-      <LoginForm />
       <p>
         <span className="account">Vous n&apos;avez pas de compte ?</span>
         <Link href="/#" passHref>
